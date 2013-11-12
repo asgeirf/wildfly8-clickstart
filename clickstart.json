@@ -12,8 +12,7 @@
     "runtime": {
         "type": "wildfly8",
         "app-parameters" : {
-            "runtime.jboss.auth-realm.database": "mydb",
-            "runtime.PLUGIN.SRC.wildfly8": "https://community.ci.cloudbees.com/job/wildfly-clickstack/lastSuccessfulBuild/artifact/build/distributions/wildfly-clickstack-8-1.0.2-SNAPSHOT.zip"
+            "runtime.jboss.auth-realm.database": "mydb"
         }
     },
     "databases": [
