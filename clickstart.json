@@ -4,12 +4,11 @@
     "source": "github",
     "description" : "Basic Java EE 7 app deployed on Wildfly 8 Web Profile via Jenkins with maven",
     "doc-url" : "https://github.com/CloudBees-community/wildfly8-clickstart/blob/master/README.md",
-    "icon" : "https://d3ko533tu1ozfq.cloudfront.net/clickstart/glassfish_icon.png",
+    "icon" : "https://raw.github.com/CloudBees-community/wildfly8-clickstart/master/icon.png",
     "disabled" : false,
     "supported-by" : "community",
     "app-package" : "https://community.ci.cloudbees.com/job/wildfly8-clickstart/lastSuccessfulBuild/artifact/target/wildfly8-clickstart-1.0.0-SNAPSHOT.war",
-    "order" : 100,
-   
+
     "runtime": {
         "type": "wildfly8",
         "app-parameters" : {
