@@ -1,16 +1,16 @@
-#  GlassFish clickstart
+#  Wildfly clickstart
 
-This clickstart sets up a build service, repository and a basic GlassFish app with continuous deployment.
+This clickstart sets up a build service, repository and a basic Wildfly app with continuous deployment.
 All built by maven. 
 
-<imc src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/glassfish_icon.png"/>
+<imc src="https://raw.github.com/CloudBees-community/wildfly8-clickstart/master/icon.png"/>
 
 <a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/wildfly8-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
 
 Launch this clickstart and glory could be yours too ! Use it as a building block if you like.
 You can launch this on Cloudbees via a clickstart automatically, or follow the instructions below. 
 
-This is based on the GlassFish stack that you can read more about <a href="https://github.com/CloudBees-community/wildfly8-clickstack">here.</a>
+This is based on the Wildfly stack that you can read more about <a href="https://github.com/CloudBees-community/wildfly8-clickstack">here.</a>
 
 
 # Deploying manually: 
@@ -28,7 +28,7 @@ bees app:create -a my-wildfly8-app -t wildfly8
 bees db:create my-wildfly8-db
 ```
 
-## Bind the MySQL Database to the Glassfish container
+## Bind the MySQL Database to the Wildfly container
 
 ```
 bees app:bind -a my-wildfly8-app -db my-wildfly8-db -as mydb
