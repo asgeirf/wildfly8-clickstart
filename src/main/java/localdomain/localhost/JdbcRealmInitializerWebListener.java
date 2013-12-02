@@ -117,9 +117,7 @@ public class JdbcRealmInitializerWebListener implements ServletContextListener {
 
     private String hashAndEncodePassword(String password) {
         try {
-            String algorithm = "SHA-256";
-            algorithm = "MD5";
-            MessageDigest md = MessageDigest.getInstance(algorithm);
+            MessageDigest md = MessageDigest.getInstance("MD5");
             md.update(password.getBytes("UTF-8"));
             byte[] passwordDigest = md.digest();
             return new BASE64Encoder().encode(passwordDigest);
