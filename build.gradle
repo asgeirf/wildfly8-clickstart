@@ -1,0 +1,52 @@
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://repository.jboss.org/nexus/content/groups/public'
+    }
+}
+
+dependencies {
+
+    // Java EE apis
+    providedCompile group: 'org.jboss.spec', name: 'jboss-javaee-7.0', version: '1.0.0.Beta2'
+
+    // logging
+    providedCompile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.5'
+
+    // validation beyond Java EE
+    providedCompile group: 'org.hibernate', name: 'hibernate-validator', version: '5.0.2.Final'
+
+    // hibernate extensions to JPA
+    providedCompile group: 'org.hibernate', name: 'hibernate-core', version: '4.3.0.Final'
+
+    // authentication
+    /*
+    compile group: 'com.google.apis', name: 'google-api-services-oauth2', version: 'v2-rev59-1.17.0-rc'
+    compile group: 'com.google.apis', name: 'google-api-services-plus', version: 'v1-rev115-1.17.0-rc'
+    compile group: 'com.google.http-client', name: 'google-http-client-jackson2', version: '1.17.0-rc'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.4'
+    */
+    providedCompile group: 'org.picketbox', name: 'picketbox', version: '4.0.20.Beta2'
+
+    compile group: 'org.picketlink', name: 'picketlink-social', version: '2.5.3.Beta1'
+    runtime group: 'org.picketlink', name: 'picketlink-impl', version: '2.5.3.Beta1'
+
+    // authorization
+    compile group: 'org.apache.deltaspike.core', name: 'deltaspike-core-api', version: '0.5'
+    runtime group: 'org.apache.deltaspike.core', name: 'deltaspike-core-impl', version: '0.5'
+    compile group: 'org.apache.deltaspike.modules', name: 'deltaspike-security-module-api', version: '0.5'
+    runtime group: 'org.apache.deltaspike.modules', name: 'deltaspike-security-module-impl', version: '0.5'
+
+    // common sense
+    compile group: 'com.google.guava', name: 'guava', version: '16.0-rc1'
+
+    // testing
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+
+}
+

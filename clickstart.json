@@ -1,10 +1,10 @@
 {
-    "id": "wildfly8-clickstart",
-    "name": "Wildfly8 App",
+    "id": "wildfly8-gradle-clickstart",
+    "name": "Wildfly8 Gradle App",
     "source": "github",
     "description" : "Basic Java EE 7 app deployed on Wildfly 8 Web Profile via Jenkins with maven",
-    "doc-url" : "https://github.com/CloudBees-community/wildfly8-clickstart/blob/master/README.md",
-    "icon" : "https://raw.github.com/CloudBees-community/wildfly8-clickstart/master/icon.png",
+    "doc-url" : "https://github.com/asgeirf/wildfly8-gradle-clickstart/blob/master/README.md",
+    "icon" : "https://raw.github.com/asgeirf/wildfly8-gradle-clickstart/master/icon.png",
     "disabled" : false,
     "supported-by" : "community",
     "app-package" : "https://community.ci.cloudbees.com/job/wildfly8-clickstart/lastSuccessfulBuild/artifact/target/wildfly8-clickstart-1.0.0-SNAPSHOT.war",
@@ -22,8 +22,9 @@
         }
     ],
     "build-with-jenkins": {
+        "plugins": ["git", "gradle"],
         "template": {
-            "type": "maven",
+            "type": "https://raw.github.com/asgeirf/wildfly8-gradle-clickstart/master/jenkins.xml",
             "options": {
             }
         }

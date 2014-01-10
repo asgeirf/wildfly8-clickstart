@@ -3,9 +3,9 @@
 This clickstart sets up a build service, repository and a basic Wildfly app with continuous deployment.
 All built by maven. 
 
-<imc src="https://raw.github.com/CloudBees-community/wildfly8-clickstart/master/icon.png"/>
+<imc src="https://raw.github.com/asgeirf/wildfly8-gradle-clickstart/master/icon.png"/>
 
-<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/CloudBees-community/wildfly8-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
+<a href="https://grandcentral.cloudbees.com/?CB_clickstart=https://raw.github.com/asgeirf/wildfly8-gradle-clickstart/master/clickstart.json"><img src="https://d3ko533tu1ozfq.cloudfront.net/clickstart/deployInstantly.png"/></a>
 
 Launch this clickstart and glory could be yours too ! Use it as a building block if you like.
 You can launch this on Cloudbees via a clickstart automatically, or follow the instructions below. 
